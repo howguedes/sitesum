@@ -1,0 +1,138 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f5f5f5;
+    /* fundo cinza claro */
+    color: #212121;
+    /* texto quase preto */
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #29434e;
+    /* azul petróleo */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f5f5f5;
+    /* texto claro no fundo escuro */
+    font-weight: bold;
+}
+
+/* Seção sobre */
+#sobre {
+    text-align: center;
+    padding: 40px 15px;
+    background-color: #455a64;
+    /* azul acinzentado */
+    color: #f5f5f5;
+}
+
+#sobre img {
+    max-width: 80%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+/* Seção assuntos */
+#assuntos {
+    text-align: center;
+    background-color: #fbc02d;
+    /* amarelo mostarda */
+    padding: 40px 15px;
+    color: #212121;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.card {
+    background-color: #fff;
+    /* branco simples */
+    padding: 18px;
+    border-radius: 8px;
+    width: 210px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção contato */
+#contato {
+    background-color: #cfd8dc;
+    /* cinza lilás */
+    text-align: center;
+    padding: 40px 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 380px;
+    margin: 0 auto;
+    gap: 12px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #1a237e;
+    /* azul escuro */
+    color: #fff;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0d174a;
+    /* azul mais escuro no hover */
+}
+
+/* Rodapé */
+footer {
+    background-color: #212121;
+    /* quase preto */
+    color: #f5f5f5;
+    text-align: center;
+    padding: 18px 0;
+}
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Menu vira coluna no celular */
+        gap: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
